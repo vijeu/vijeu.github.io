@@ -142,17 +142,18 @@ body {
     height:10vw;
     text-align:center;
     font-size:25px;
+    transform:rotate(90deg);
     background:transparent;
     color:#fff;
     position:fixed;
-    bottom:0;
-    left:45vw;
+    right:0;           
+    bottom:40vh;      
     display:flex;
     flex-direction: column;
     justify-content:center;
     z-index:4;
     transition:0.4s ease-in-out;
-    border-radius:100px 100px 0px 0px;
+    border-radius:0px 0px 100px 100px;
 }
 #projects:hover {
     background:rgba(255,50,50,0.9);
@@ -306,15 +307,16 @@ body {
     color:#fff;
 }
 #footer {
-    color:#fff;
-    width:92vw;
-    padding:5vh 4vw;
-    text-align:right;
-    position:fixed;
-    z-index:1;
-    bottom:0;
-    font-size:16px;
-    font-weight:bold;
+    color: #fff;
+    width: 100vw;
+    padding: 5vh 0;
+    text-align: center;  
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;             
+    font-size: 16px;
+    font-weight: bold;
 }
 #footer a {
     color:rgb(255, 50, 50) ;
