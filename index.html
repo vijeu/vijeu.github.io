@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emad Zolfaghari | portfolio</title>
+    <link rel="icon" type="image" href="./assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay: 1700ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1900ms;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay: 1900ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay: 1000ms;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay: 1000ms;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay: 1000ms;">contact</a>
+    <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">projects</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
+        <h1>Emad</h1>
+        <h2>Junior Data Analyst / BI Developer</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+            <a onclick="showprojects()">projects</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;">
+                    <a class="social" href="https://www.linkedin.com/">
+                        <i class="fab fa-linkedin"></i></a></td>
+
+                <td class="animated zoomIn" style="animation-delay:2.4s;">
+                    <a class="social" href="mailto:TheEmad.z.v@gmail.com">
+                        <i class="fas fa-envelope"></i></a></td>
+
+                <td class="animated zoomIn" style="animation-delay:2.8s;">
+                    <a class="social" href="https://github.com/Vijeu">
+                        <i class="fab fa-github"></i></a></td>
+
+            </tr>
+        </table>
+    </div>
+    <div id="projects_container" class="container">
+        <div onclick="closeprojects()"><i class="fas fa-angle-right"></i></div>
+        <h1>projects.</h1>
+        <section>
+            <h2>my work</h2>
+            <p>
+                Here are some of the projects I've worked on recently:
+            </p>
+            <ul>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Sales Data Analysis</h3>
+                    <p>Analyzed 180,000+ sales records over 12 months using Python (Pandas, Matplotlib) to
+                         uncover business insights through data cleaning, aggregation, and visualization.</p>
+                    <button class="btn_one"><a href="https://github.com/vijeu/sales-data-analysis"
+                            style="color: inherit; text-decoration: none">View Project</a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Power BI Video Game Sales Dashboard</h3>
+                    <p>Built an interactive Power BI dashboard to visualize global video game sales from 
+                        1980 to 2020, identifying regional trends and platform-specific performance.</p>
+                    <button class="btn_one"><a href="https://github.com/vijeu/powerbi-video-game-sales-dashboard" 
+                            style="color: inherit; text-decoration: none">View Project</a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>CS50 SQL Problem Set Solutions</h3>
+                    <p>Completed Harvard's CS50 SQL course, covering data modeling, normalization, 
+                        subqueries, views, triggers, and performance optimization in SQL (SQLite/MySQL).</p>
+                    <button class="btn_one"><a href="https://github.com/vijeu/cs50-sql-2024-solutions" 
+                            style="color: inherit; text-decoration: none">View Project</a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Fake News Detector</h3>
+                    <p>Used NLP techniques and logistic regression to classify news articles. 
+                        Implemented with Python and scikit-learn for binary classification of real vs. fake content.</p>
+                    <button class="btn_one"><a href="https://github.com/vijeu/fake-news-detector" 
+                            style="color: inherit; text-decoration: none">View Project</a></button>
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>work.</h1>
+        <section>
+            <h2></h2>
+            <p>
+    Welcome! I'm Emad Zolfaghari, a data-driven problem solver specializing in Data Analysis, 
+    Python Programming, SQL, and Business Intelligence. With hands-on experience across real-world 
+    projects, I transform raw data into actionable insights through visualization, storytelling 
+    dashboards, and machine learning models. Whether it's designing Power BI dashboards, 
+    writing analytical scripts in Python, or building classification tools, I’m passionate about 
+    using data to make smart decisions. Explore my GitHub to see what I've built and feel free to 
+    connect for collaboration!
+</p>
+
+<div id="used">
+    <div><i class="fas fa-circle"></i>&nbsp;Data Analysis</div>
+    <div><i class="fas fa-circle"></i>&nbsp;Python Programming</div>
+    <div><i class="fas fa-circle"></i>&nbsp;Power BI Dashboards</div>
+    <div><i class="fas fa-circle"></i>&nbsp;SQL & Databases</div>
+    <div><i class="fas fa-circle"></i>&nbsp;Machine Learning (Basics)</div>
+</div>
+            
+        </section>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>about.</h1>
+        <section>
+            <h2>about me</h2>
+                <p>
+                    Hello there! I'm Emad Zolfaghari, a self-taught data analyst and developer, 
+                    passionate about uncovering insights through data. With a strong
+                      foundation in Python, SQL, and Power BI, I specialize in transforming raw
+                       datasets into meaningful visualizations and reports that support
+                        smart business decisions.
+                </p>
+                <p>
+                    My portfolio includes projects in sales analytics, dashboard design, 
+                    and even machine learning—ranging from fake news detection to MRI tumor 
+                    classification. I thrive on solving real-world problems with data, and I'm 
+                    always eager to learn and apply new tools that make analysis faster, smarter, 
+                    and more impactful.
+                </p>
+                <p>
+                    Feel free to explore my work on GitHub, where you'll find practical examples 
+                    of data cleaning, visualization, and automation. Whether you're looking to 
+                    collaborate or simply curious, I'd love to connect and turn data into something 
+                    powerful.
+                </p>
+
+        </section>
+        <section>
+            <h2>skills</h2>
+                <p>
+                    Python (Pandas, NumPy, Matplotlib, Jupyter Notebook), SQL (MySQL, SQLite, MS SQL Server),
+                     Power BI, Excel (Pivot Tables, Formulas), Git, Data Cleaning, Data Visualization,
+                      Machine Learning (scikit-learn, TensorFlow basics), Communication, Problem-Solving
+                </p>
+        </section>
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>contact.</h1>
+        <section>
+    <h2>contact me</h2>
+    <p>If you'd like to get in touch for a project, collaboration, or opportunity, feel free to use the form below:</p>
+
+    <form action="https://formcarry.com/s/ax2gGFM2Xy6" method="POST" class="formcarry-form">
+        <input name="name" type="text" placeholder="Your Name" required />
+        <input name="email" type="email" placeholder="Your Email" required /><br>
+        <textarea name="message" placeholder="Your Message" required rows="5"></textarea><br>
+        <button class="btn_one" type="submit">Send</button>
+    </form>
+        </section>
+    </div>
+    <div id="footer">
+        <a href="https://vijeu.github.io">Emad</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
